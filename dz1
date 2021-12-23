@@ -1,0 +1,58 @@
+#1
+tseloe = input()
+n1 = int(tseloe)
+n2 = n1%2
+if n2 == 0:
+    print ('is chetnoe')
+else:
+    print ('is nechentoe')
+    
+    
+#2
+arg1 = input ('num 1:')
+arg2 = input('num 2:')
+n1 = int(arg1)
+n2 = int(arg2)
+result = n1 + n2
+print(result)
+
+#3
+n = int(input())
+lst = []
+k = 0
+for i in range(2, n+1):
+    for j in range(2, i):
+        if i % j == 0:
+            k = k + 1
+    if k == 0:
+        lst.append(i)
+    else:
+        k = 0
+m = max(lst)
+if m < n:
+  print(m)
+else:
+  print(lst[-2])
+  
+  
+#4
+n = int(input())
+lst = []
+k = 0
+for i in range(2, n+1):
+    for j in range(2, i):
+        if i % j == 0:
+            k = k + 1
+    if k == 0:
+        lst.append(i)
+    else:
+        k = 0
+print(lst)
+
+#5
+n1 = int(input())
+n2 = int(input())
+n = 15
+for i in range(0, n):
+    n1, n2 = n2, n1 + n2
+    print(n2)
